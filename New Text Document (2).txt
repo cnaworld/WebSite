@@ -1,0 +1,57 @@
+Create a complete static personal website in dark mode for a cybersecurity researcher and bug bounty hunter. fully design like https://lostsec.xyz/
+
+🧱 Features I need:
+
+Landing page with animated hacker-themed intro
+
+Sections: "About Me", "Writeups", "Tools", "Blog", "Contact"
+
+Responsive layout using TailwindCSS
+
+Use Next.js for SSG/SSR flexibility
+
+Blog posts in Markdown format from a posts/ directory
+
+Blog listing with search, tags, and date sorting
+
+Include a code syntax highlighter (like react-syntax-highlighter)
+
+Dark theme with hacker aesthetics (green, black, terminal feel)
+
+Font: use monospaced fonts like JetBrains Mono
+
+Add an RSS feed for blog posts
+
+Add a sitemap.xml and basic SEO meta tags
+
+No user authentication/login — static public site
+
+🛠 Project structure:
+
+/pages/index.tsx: landing page
+
+/pages/about.tsx, /pages/tools.tsx, /pages/contact.tsx
+
+/pages/blog/[slug].tsx: dynamic blog post
+
+/posts/: markdown blog posts
+
+/components/: reusable UI components (Navbar, Footer, etc.)
+
+/lib/: blog MD parser with gray-matter and remark
+
+🔧 Also:
+
+Create 2 sample blog posts:
+
+“Bypassing CSP via JSONP in Legacy Apps”
+
+“IDOR Exploitation in Healthcare Platforms: A Case Study”
+
+Setup Tailwind + PostCSS properly
+
+Include code to generate sitemap.xml at build time
+
+Deployable on Vercel or GitHub Pages (static export possible)
+
+Please show me a preview of each page and a clear explanation of the folder structure. After that, generate Git diffs and a pull request I can review and merge.
