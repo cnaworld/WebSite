@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* Additional base styles can go here if needed */
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* Add a pulse for the main title if desired */
+  .animate-pulse {
+     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  @keyframes pulse {
+     0%, 100% {
+         opacity: 1;
+         text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+     }
+     50% {
+         opacity: .7;
+         text-shadow: 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+     }
+  }
+}
